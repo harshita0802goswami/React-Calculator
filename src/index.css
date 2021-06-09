@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(141, 99, 99);
+}
+.container{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  display: grid;
+  grid-template-columns: 1fr  1fr  1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "dis dis dis dis"
+                        "AC C div mult"
+                        "seven eight nine minus"
+                        "four five six add"
+                        "one two three equals"
+                        "zero zero dot equals "
+                        ;
+}
+.click-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(97, 17, 17, 0.685);
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.849);
+  cursor: pointer;
+}
+.click-btns:hover{
+  border: 1px solid white;
+  
+}
+.dis{
+  grid-area: dis;
+  background-color: black;
+  text-align: right;
+  font-size: 20px;
+}
+.dis input{
+  width: 100%;
+  color: white;
+  padding: 5px 20px;
+  text-align: right;
+  background-color: black;
+}
+
+input::placeholder{
+  color: white;
+}
+.total{
+  padding: 5px 20px;
+  color: yellow;
+}
+.zero{
+  grid-area: zero;
+}
+.equals{
+  grid-area: equals;
+}
+.dark{
+  background-color:#333 ;
+}
+.red{
+  background-color:  rgba(243, 10, 10, 0.685);
+}
+.blue{
+  background-color: rgba(0, 0, 255, 0.726);
+}
